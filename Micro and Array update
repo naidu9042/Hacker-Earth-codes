@@ -1,0 +1,10 @@
+n=int(input())
+for i in range(n):
+    a,b=map(int,input().split())
+    l=list(map(int,input().split()))
+    if len(l)==a:
+            if min(l)<b and min(l)!=b:
+                print(b-min(l))
+            else:
+                print(0)
+        
